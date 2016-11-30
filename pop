@@ -1,0 +1,22 @@
+    <div id="connectionGroupsQueryPopup" style="background-color: rgb(0, 0, 0); position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; opacity: 0.7; z-index: 9998; display: none;" class="b-modal __b-popup1__"></div>
+        <div style="left: 20%; position: fixed; top: 20%; z-index: 9999; display: none; height: 30%; right: 20%; width: 50%;" id="connectionGroupsModalContent" class="modal grid_15">
+            <div style="display: block; height: 50%; width: 98%;" class="grid_15 b-ajax-wrapper">
+                <div class="modalHead">
+                    <label id="connectionGroupsPopupModalHead"> Message </label>
+                    <span style="margin-left: 10px; float: right;">
+                    	<a class="vz_btn_secondary small" href="javascript:closePopup('ConnectionGroups');" title="Close ">
+		            		<span>Close</span>
+                    </a>
+                    </span>
+                </div>
+                <div class="dotted_divider"></div>
+                <div class="modalCnt">
+                    <div id="connectionGroupsOperationStatusSpinner" style="display: none; float: left; ">
+                        <img src="<%=request.getContextPath()%>/images/ajax-loader.gif" />
+                    </div>
+                    <div style="float: left;" class="martop5 marleft5">
+                        <label id="connectionGroupsPopupMessage" style="font-family: nhg-text-roman,arial,sans-serif; font-size: 13px;">Processing...</label>
+                    </div>
+                </div>
+            </div>
+        </div>
